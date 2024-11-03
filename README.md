@@ -16,16 +16,16 @@
 
 ## Dataset
 - Data Source: https://www.kaggle.com/datasets/pepepython/spotify-huge-database-daily-charts-over-3-years
-![Logo](https://i.postimg.cc/JyYjtQJC/dataset.png)
+![Logo](https://i.postimg.cc/RJwfKKfZ/dataset.png)
 - Data description: This huge dataset contains all the songs in Spotify's Daily Top 200 charts in 35+1 (global) countries around the world for a period of over 3 years (2017-2020)
 - Excel link: https://docs.google.com/spreadsheets/d/1RRyLOfj7QFa_sKqMKInEzVUGa3oju_Rv/edit?usp=sharing&ouid=108559263509356755055&rtpof=true&sd=true
 
 ## Main content
 - Logical Modeling Design: Dim_Song, Dim_Genre, Dim_Album, Dim_Artist, Dim_Time, Dim_Location, Fact_Song_Popularity, Fact_Artist_Popularity, Fact_Genre_Popularity
 - Star Schema
-![Logo](https://i.postimg.cc/hfV8MTFV/star.png)
+![Logo](https://i.postimg.cc/YvR6d6P4/star-schema.jpg)
 - Physical Model
-![Logo](https://i.postimg.cc/2LZQsB1R/physical.png)
+![Logo](https://i.postimg.cc/MMCVndnL/physical.jpg)
 ### SSIS Process
 - Create SSIS project on Visual Studio
 - Create control flow for dumping data to DataWarehouse
@@ -38,11 +38,11 @@
 - Add Dimension Attributes
 ### SSRS Process
 - Dashboard of Song Popularity
-![Logo](https://i.postimg.cc/0rTdpZ48/rp1.png)
+![Logo](https://i.postimg.cc/7CLgdCvK/song.jpg)
 - Dashboard of Artist Popularity
-![Logo](https://i.postimg.cc/ZWZ8QnZ2/rp2.png)
+![Logo](https://i.postimg.cc/B8wx0q44/artist.jpg)
 - Dashboard of Genre Popularity
-![Logo](https://i.postimg.cc/xk1K0ZXP/rp3.png)
+![Logo](https://i.postimg.cc/r005yvwW/genre.jpg)
 ## Tools
 - SQL Server Management Studio 20: [Link Download](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16&fbclid=IwZXh0bgNhZW0CMTEAAR0fdj20xbt3zZGfzP6EJNK2RDNbv-VBDD9M8CbNOnhWhETegcfr4EhPd4U_aem_AJI96LOQPds2Qn1vZsrU-A)
 - SQL Server Integration Services Projects 2022: [Link Download](https://marketplace.visualstudio.com/items?itemName=SSIS.MicrosoftDataToolsIntegrationServices&fbclid=IwZXh0bgNhZW0CMTEAAR1nM6BlnmNMkWUkhc6LFq6TY8fBqGw0lp9TOxpa2rKEKmGnC-p7h0mrVy4_aem_BNa6Ko6GhvXOWeg5TQcgjw)
