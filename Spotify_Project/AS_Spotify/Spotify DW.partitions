@@ -1,0 +1,65 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8cbd8459-6f67-427a-9869-1b9350168654" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Spotify DW</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Fact Song Popularity</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="ccf63e4c-857f-4eb2-a2d7-642d67549f5c">
+          <ID>Fact Song Popularity</ID>
+          <Name>Fact Song Popularity</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="0fd8420d-c3df-4b73-844c-bb173242dd6a">
+            <DataSourceViewID>Spotify DW</DataSourceViewID>
+            <TableID>dbo_fact_song_popularity</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Artist Popularity</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="76a2871c-f38f-4a82-9672-109d7107ff46">
+          <ID>Fact Artist Popularity</ID>
+          <Name>Fact Artist Popularity</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="2fa8d9e2-4f2f-46f4-bf4e-1bffa0fa36c0">
+            <DataSourceViewID>Spotify DW</DataSourceViewID>
+            <TableID>dbo_fact_artist_popularity</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Genre Popularity</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="7535ae07-f930-464d-9504-28529bdd29f7">
+          <ID>Fact Genre Popularity</ID>
+          <Name>Fact Genre Popularity</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="db8a86ba-ead6-4bac-8fc1-a20cd00fdcfb">
+            <DataSourceViewID>Spotify DW</DataSourceViewID>
+            <TableID>dbo_fact_genre_popularity</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

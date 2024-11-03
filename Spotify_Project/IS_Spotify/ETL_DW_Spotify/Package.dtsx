@@ -1,0 +1,2122 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="10/1/2024 8:02:54 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-DV2TFOR5"
+  DTS:CreatorName="LAPTOP-DV2TFOR5\ADMIN"
+  DTS:DTSID="{C26C4C73-A7B8-44D0-BA91-E957273D3699}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="135"
+  DTS:VersionGUID="{1CD56251-F80F-4A5B-A871-1C9F8B8CAF45}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[aaa]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{213994CE-69A2-4A8D-B022-FDB3D77A1D5F}"
+      DTS:ObjectName="aaa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:Unicode="True"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="F:\Final database\Final database - Copy - Copy.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_name"
+              DTS:DTSID="{AD875AD3-086D-4040-976F-177407AAB4B7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="uri"
+              DTS:DTSID="{0E3CFBF9-C3AD-4D03-AF3A-6A22D5BAC8FE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="popularity_score"
+              DTS:DTSID="{63FB4C53-492F-4B34-AF6E-FD622C5BE160}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3333"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="title"
+              DTS:DTSID="{3D3BC957-E111-41AC-AFC0-2D8C8CBCDA28}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3333"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="artist_name"
+              DTS:DTSID="{84A7D17C-75E2-4BE5-A2CE-61B0B6EBCB5C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="album_type"
+              DTS:DTSID="{CFC0325C-1877-44F8-8987-63A41941FB04}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="genre"
+              DTS:DTSID="{7C391E82-696E-4F5A-847F-CF6DADF8F6CC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="artist_followers"
+              DTS:DTSID="{2EBE8ED6-2781-4BA7-A3E3-FF62351A3AC3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="explicit"
+              DTS:DTSID="{15A64ECB-701A-4E05-A522-51D32B5F4A22}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3333"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="album_name"
+              DTS:DTSID="{6132040A-472C-4689-9C3A-740C5467D074}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="release_date"
+              DTS:DTSID="{C02AAE90-C4AE-4D0C-9A37-ABBF5AC8A943}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="track_number"
+              DTS:DTSID="{2BA254BB-D97E-496D-8633-5BA2C23E276E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="track_album"
+              DTS:DTSID="{A534D145-FCF6-4EE9-B7B0-8525E4DA755F}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[artist csv]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{812A9889-7A16-4A3E-ABAB-D29E93130867}"
+      DTS:ObjectName="artist csv">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\ADMIN\Downloads\Artist database.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="artist_id"
+              DTS:DTSID="{13382B29-2259-47E5-9A93-154F46EAC937}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="artist_name"
+              DTS:DTSID="{347ECE3C-B621-4D49-B1C3-C55C21201338}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="artist_followers"
+              DTS:DTSID="{D6322B7F-4A6E-4881-96F4-A7372A3A1CDA}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{8F3C8EFB-31E6-41B1-BBCA-88DCF98CCEC4}"
+      DTS:ObjectName="Excel Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=F:\test.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-DV2TFOR5\SQLEXPRESS.DW_Spotify]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{91BB83AB-46AE-418D-A741-FD08117CB467}"
+      DTS:ObjectName="LAPTOP-DV2TFOR5\SQLEXPRESS.DW_Spotify">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=LAPTOP-DV2TFOR5\SQLEXPRESS;User ID=;Initial Catalog=DW_Spotify;Provider=MSOLEDBSQL.1;Persist Security Info=False;Integrated Security=SSPI;Initial File Name=;Server SPN=;Authentication=;Access Token=;Application Name=SSIS-Package-{91BB83AB-46AE-418D-A741-FD08117CB467}LAPTOP-DV2TFOR5\SQLEXPRESS.DW_Spotify;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-DV2TFOR5\SQLSERVER.Spotify_DW.viet]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{A191FF36-5F3D-474A-A8FA-3497730229EA}"
+      DTS:ObjectName="LAPTOP-DV2TFOR5\SQLSERVER.Spotify_DW.viet">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=LAPTOP-DV2TFOR5\SQLSERVER;User ID=viet;Initial Catalog=Spotify_DW;Provider=SQLOLEDB.1;Application Name=SSIS-Package-{A191FF36-5F3D-474A-A8FA-3497730229EA}LAPTOP-DV2TFOR5\SQLSERVER.Spotify_DW.viet;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAp8jmvoPTrk6JPOCmYhcyBQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADL4u4vthzY+nBsH83Ub831T0/l6tWNkbl7vDkgUl5+GAAAAAAOgAAAAAIAACAAAAA1WrERiOkPtNlRecFU8V20HQwht2nl1X+OwJZFvATmvxAAAABTuTOIrFafeo4mdws+G5mIQAAAAJEvfxpk3yOuLg9N5d2LYxwPVLoIXTs4mUwagUYS1o/Cf3N4ODP0WmDjx2dj0PrCUDSqtb3YlVPqlv46AF1WOkQ</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[song csv]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{677D0738-9E02-467B-A0DD-2B84CAC2A8F6}"
+      DTS:ObjectName="song csv">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\ADMIN\Downloads\song_database.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="song_id"
+              DTS:DTSID="{1779DA8A-2966-4AF9-852A-9F1BBE8505D3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="title"
+              DTS:DTSID="{EC04582E-38F0-42C0-A3C6-AE973AC81C1A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="uri"
+              DTS:DTSID="{26C938ED-4AFB-433B-A569-BCB4CAF2328A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="artist_id"
+              DTS:DTSID="{D3527C29-8D83-46C1-B8D3-100998230F18}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="album_name"
+              DTS:DTSID="{38FB8E16-04FB-4595-82E7-E9D1E04C5074}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="release_date"
+              DTS:DTSID="{B7D23062-8593-479A-8118-B32C3EF1ADBB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="track_number"
+              DTS:DTSID="{8B1DAC4E-5F8A-4347-ADC6-897545575494}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="tracks_album"
+              DTS:DTSID="{A70FC447-25DB-4C1D-9305-1D30A08AC9CF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Explicit_true"
+              DTS:DTSID="{59CD3D02-CE01-4340-A763-E76F170C4227}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Genre"
+              DTS:DTSID="{7C4670CB-1CF6-4EBB-8094-7558B1A3868A}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[test]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{FB40AEBE-46BE-4086-9A50-C36C467DAB37}"
+      DTS:ObjectName="test">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="F:\Final database\Final database - Copy (version 1).csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_name"
+              DTS:DTSID="{D20AE289-A055-48AA-8464-EF62882F019C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="150"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="uri"
+              DTS:DTSID="{8DA113AF-79E1-4A30-A08C-575262C4CC9B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="popularity_score"
+              DTS:DTSID="{E6E60419-7B89-4466-AF30-2F8AC3F07B7B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="title"
+              DTS:DTSID="{F25C03E8-B3AC-4E57-96E2-0CE604278873}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="artist_name"
+              DTS:DTSID="{6E5A4854-08BB-43D0-92B8-360832AC7B37}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="album_type"
+              DTS:DTSID="{1450737C-E87B-4EEB-9933-D023E6DB42CB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="genre"
+              DTS:DTSID="{AA3891C6-98F3-4821-A61E-C0B930C4B2E4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="artist_followers"
+              DTS:DTSID="{32100B1C-B794-4447-A485-1F41E0E48DA9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="explicit"
+              DTS:DTSID="{8A16FB08-C19B-40D2-A058-DFCE7F030C22}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="150"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="album_name"
+              DTS:DTSID="{89A31833-E707-4EA5-A675-50CA0ABAA7B6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="release_date"
+              DTS:DTSID="{28DE855B-8DCA-41DE-89B1-CD4C54368712}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="track_number"
+              DTS:DTSID="{6E7CD000-037A-414F-9584-AF3AB5890DDA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="track_album"
+              DTS:DTSID="{E18710A3-065A-402A-8BA5-2F916EECD29A}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Dump data to DW"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{0ED5CAE6-2E6F-4800-ACB8-9505D648CFDD}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Dump data to DW"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Dump data to DW\Excel Source"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="Excel Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">'Final database$'</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Dump data to DW\Excel Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[country_name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].ExternalColumns[country_name]"
+                      length="255"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[country_name]"
+                      name="country_name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[uri]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].ExternalColumns[uri]"
+                      length="255"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[uri]"
+                      name="uri"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[popularity_score]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].ExternalColumns[popularity_score]"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[popularity_score]"
+                      name="popularity_score"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[title]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].ExternalColumns[title]"
+                      length="255"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[title]"
+                      name="title"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[artist_name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].ExternalColumns[artist_name]"
+                      length="255"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[artist_name]"
+                      name="artist_name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[album_type]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].ExternalColumns[album_type]"
+                      length="255"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[album_type]"
+                      name="album_type"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[genre]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].ExternalColumns[genre]"
+                      length="255"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[genre]"
+                      name="genre"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[artist_followers]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].ExternalColumns[artist_followers]"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[artist_followers]"
+                      name="artist_followers"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[explicit]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].ExternalColumns[explicit]"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[explicit]"
+                      name="explicit"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[album_name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].ExternalColumns[album_name]"
+                      length="255"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[album_name]"
+                      name="album_name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[release_date]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].ExternalColumns[release_date]"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[release_date]"
+                      name="release_date"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[track_number]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].ExternalColumns[track_number]"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[track_number]"
+                      name="track_number"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[tracks_in_album]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].ExternalColumns[tracks_in_album]"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[tracks_in_album]"
+                      name="tracks_in_album"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].ExternalColumns[country_name]"
+                      dataType="wstr"
+                      length="255"
+                      name="country_name" />
+                    <externalMetadataColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].ExternalColumns[uri]"
+                      dataType="wstr"
+                      length="255"
+                      name="uri" />
+                    <externalMetadataColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].ExternalColumns[popularity_score]"
+                      dataType="r8"
+                      name="popularity_score" />
+                    <externalMetadataColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].ExternalColumns[title]"
+                      dataType="wstr"
+                      length="255"
+                      name="title" />
+                    <externalMetadataColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].ExternalColumns[artist_name]"
+                      dataType="wstr"
+                      length="255"
+                      name="artist_name" />
+                    <externalMetadataColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].ExternalColumns[album_type]"
+                      dataType="wstr"
+                      length="255"
+                      name="album_type" />
+                    <externalMetadataColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].ExternalColumns[genre]"
+                      dataType="wstr"
+                      length="255"
+                      name="genre" />
+                    <externalMetadataColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].ExternalColumns[artist_followers]"
+                      dataType="r8"
+                      name="artist_followers" />
+                    <externalMetadataColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].ExternalColumns[explicit]"
+                      dataType="bool"
+                      name="explicit" />
+                    <externalMetadataColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].ExternalColumns[album_name]"
+                      dataType="wstr"
+                      length="255"
+                      name="album_name" />
+                    <externalMetadataColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].ExternalColumns[release_date]"
+                      dataType="date"
+                      name="release_date" />
+                    <externalMetadataColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].ExternalColumns[track_number]"
+                      dataType="r8"
+                      name="track_number" />
+                    <externalMetadataColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].ExternalColumns[tracks_in_album]"
+                      dataType="r8"
+                      name="tracks_in_album" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Error Output].Columns[country_name]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Error Output].Columns[country_name]"
+                      name="country_name" />
+                    <outputColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Error Output].Columns[uri]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Error Output].Columns[uri]"
+                      name="uri" />
+                    <outputColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Error Output].Columns[popularity_score]"
+                      dataType="r8"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Error Output].Columns[popularity_score]"
+                      name="popularity_score" />
+                    <outputColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Error Output].Columns[title]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Error Output].Columns[title]"
+                      name="title" />
+                    <outputColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Error Output].Columns[artist_name]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Error Output].Columns[artist_name]"
+                      name="artist_name" />
+                    <outputColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Error Output].Columns[album_type]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Error Output].Columns[album_type]"
+                      name="album_type" />
+                    <outputColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Error Output].Columns[genre]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Error Output].Columns[genre]"
+                      name="genre" />
+                    <outputColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Error Output].Columns[artist_followers]"
+                      dataType="r8"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Error Output].Columns[artist_followers]"
+                      name="artist_followers" />
+                    <outputColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Error Output].Columns[explicit]"
+                      dataType="bool"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Error Output].Columns[explicit]"
+                      name="explicit" />
+                    <outputColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Error Output].Columns[album_name]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Error Output].Columns[album_name]"
+                      name="album_name" />
+                    <outputColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Error Output].Columns[release_date]"
+                      dataType="date"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Error Output].Columns[release_date]"
+                      name="release_date" />
+                    <outputColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Error Output].Columns[track_number]"
+                      dataType="r8"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Error Output].Columns[track_number]"
+                      name="track_number" />
+                    <outputColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Error Output].Columns[tracks_in_album]"
+                      dataType="r8"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Error Output].Columns[tracks_in_album]"
+                      name="tracks_in_album" />
+                    <outputColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Dump data to DW\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[tmp]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Dump data to DW\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-DV2TFOR5\SQLSERVER.Spotify_DW.viet]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-DV2TFOR5\SQLSERVER.Spotify_DW.viet]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[country_name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="country_name"
+                      externalMetadataColumnId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[country_name]"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[country_name]" />
+                    <inputColumn
+                      refId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[uri]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="uri"
+                      externalMetadataColumnId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[uri]"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[uri]" />
+                    <inputColumn
+                      refId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[popularity_score]"
+                      cachedDataType="r8"
+                      cachedName="popularity_score"
+                      externalMetadataColumnId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[popularity_score]"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[popularity_score]" />
+                    <inputColumn
+                      refId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[title]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="title"
+                      externalMetadataColumnId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[title]"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[title]" />
+                    <inputColumn
+                      refId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[artist_name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="artist_name"
+                      externalMetadataColumnId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[artist_name]"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[artist_name]" />
+                    <inputColumn
+                      refId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[album_type]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="album_type"
+                      externalMetadataColumnId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[album_type]"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[album_type]" />
+                    <inputColumn
+                      refId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[genre]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="genre"
+                      externalMetadataColumnId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[genre]"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[genre]" />
+                    <inputColumn
+                      refId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[artist_followers]"
+                      cachedDataType="r8"
+                      cachedName="artist_followers"
+                      externalMetadataColumnId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[artist_followers]"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[artist_followers]" />
+                    <inputColumn
+                      refId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[explicit]"
+                      cachedDataType="bool"
+                      cachedName="explicit"
+                      externalMetadataColumnId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[explicit]"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[explicit]" />
+                    <inputColumn
+                      refId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[album_name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="album_name"
+                      externalMetadataColumnId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[album_name]"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[album_name]" />
+                    <inputColumn
+                      refId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[release_date]"
+                      cachedDataType="date"
+                      cachedName="release_date"
+                      externalMetadataColumnId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[release_date]"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[release_date]" />
+                    <inputColumn
+                      refId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[track_number]"
+                      cachedDataType="r8"
+                      cachedName="track_number"
+                      externalMetadataColumnId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[track_number]"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[track_number]" />
+                    <inputColumn
+                      refId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[tracks_in_album]"
+                      cachedDataType="r8"
+                      cachedName="tracks_in_album"
+                      externalMetadataColumnId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[tracks_in_album]"
+                      lineageId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output].Columns[tracks_in_album]" />
+                    <inputColumn
+                      refId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[row_id]"
+                      cachedDataType="i4"
+                      cachedName="row_id"
+                      externalMetadataColumnId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[row_id]"
+                      lineageId="Package\Dump data to DW\Script Component.Outputs[Output 0].Columns[row_id]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[country_name]"
+                      dataType="wstr"
+                      length="255"
+                      name="country_name" />
+                    <externalMetadataColumn
+                      refId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[uri]"
+                      dataType="wstr"
+                      length="255"
+                      name="uri" />
+                    <externalMetadataColumn
+                      refId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[popularity_score]"
+                      dataType="r8"
+                      name="popularity_score" />
+                    <externalMetadataColumn
+                      refId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[title]"
+                      dataType="wstr"
+                      length="255"
+                      name="title" />
+                    <externalMetadataColumn
+                      refId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[artist_name]"
+                      dataType="wstr"
+                      length="255"
+                      name="artist_name" />
+                    <externalMetadataColumn
+                      refId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[album_type]"
+                      dataType="wstr"
+                      length="255"
+                      name="album_type" />
+                    <externalMetadataColumn
+                      refId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[genre]"
+                      dataType="wstr"
+                      length="255"
+                      name="genre" />
+                    <externalMetadataColumn
+                      refId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[artist_followers]"
+                      dataType="r8"
+                      name="artist_followers" />
+                    <externalMetadataColumn
+                      refId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[explicit]"
+                      dataType="bool"
+                      name="explicit" />
+                    <externalMetadataColumn
+                      refId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[album_name]"
+                      dataType="wstr"
+                      length="255"
+                      name="album_name" />
+                    <externalMetadataColumn
+                      refId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[release_date]"
+                      dataType="dbTimeStamp"
+                      name="release_date" />
+                    <externalMetadataColumn
+                      refId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[track_number]"
+                      dataType="r8"
+                      name="track_number" />
+                    <externalMetadataColumn
+                      refId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[tracks_in_album]"
+                      dataType="r8"
+                      name="tracks_in_album" />
+                    <externalMetadataColumn
+                      refId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[row_id]"
+                      dataType="i4"
+                      name="row_id" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Dump data to DW\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Dump data to DW\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Dump data to DW\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Dump data to DW\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Dump data to DW\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Dump data to DW\Script Component"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;13"
+              description="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum."
+              name="Script Component"
+              version="13">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Stores the source code of the component"
+                  isArray="true"
+                  name="SourceCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="30">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[ComponentWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services component wrapper
+*  This module defines the base class for your component
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+
+public class UserComponent: ScriptComponent
+{
+    public Connections Connections;
+    public Variables Variables;
+    public UserComponent()
+    {
+        Connections = new Connections(this);
+        Variables = new Variables(this);
+    }
+
+    public override void ProcessInput(int InputID, string InputName, PipelineBuffer Buffer, OutputNameMap OutputMap)
+    {
+
+        if (InputName.Equals(@"Input 0", StringComparison.Ordinal))
+        {
+            Input0_ProcessInput(new Input0Buffer(Buffer, GetColumnIndexes(InputID), OutputMap));
+        }
+
+    }
+
+    public virtual void Input0_ProcessInput(Input0Buffer Buffer)
+    {
+        while (Buffer.NextRow())
+        {
+            Input0_ProcessInputRow(Buffer);
+        }
+    }
+
+    public virtual void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+    }
+
+}
+
+public class Connections
+{
+    ScriptComponent ParentComponent;
+
+    public Connections(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+
+public class Variables
+{
+    ScriptComponent ParentComponent;
+
+    public Variables(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.resx]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[main.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[#region Help:  Introduction to the Script Component
+/* The Script Component allows you to perform virtually any operation that can be accomplished in
+ * a .Net application within the context of an Integration Services data flow.
+ *
+ * Expand the other regions which have "Help" prefixes for examples of specific ways to use
+ * Integration Services features within this script component. */
+#endregion
+
+#region Namespaces
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+#endregion
+
+/// <summary>
+/// This is the class to which to add your code.  Do not change the name, attributes, or parent
+/// of this class.
+/// </summary>
+[Microsoft.SqlServer.Dts.Pipeline.SSISScriptComponentEntryPointAttribute]
+public class ScriptMain : UserComponent
+{
+    #region Help:  Using Integration Services variables and parameters
+    /* To use a variable in this script, first ensure that the variable has been added to
+     * either the list contained in the ReadOnlyVariables property or the list contained in
+     * the ReadWriteVariables property of this script component, according to whether or not your
+     * code needs to write into the variable.  To do so, save this script, close this instance of
+     * Visual Studio, and update the ReadOnlyVariables and ReadWriteVariables properties in the
+     * Script Transformation Editor window.
+     * To use a parameter in this script, follow the same steps. Parameters are always read-only.
+     *
+     * Example of reading from a variable or parameter:
+     *  DateTime startTime = Variables.MyStartTime;
+     *
+     * Example of writing to a variable:
+     *  Variables.myStringVariable = "new value";
+     */
+    #endregion
+
+    #region Help:  Using Integration Services Connnection Managers
+    /* Some types of connection managers can be used in this script component.  See the help topic
+     * "Working with Connection Managers Programatically" for details.
+     *
+     * To use a connection manager in this script, first ensure that the connection manager has
+     * been added to either the list of connection managers on the Connection Managers page of the
+     * script component editor.  To add the connection manager, save this script, close this instance of
+     * Visual Studio, and add the Connection Manager to the list.
+     *
+     * If the component needs to hold a connection open while processing rows, override the
+     * AcquireConnections and ReleaseConnections methods.
+     * 
+     * Example of using an ADO.Net connection manager to acquire a SqlConnection:
+     *  object rawConnection = Connections.SalesDB.AcquireConnection(transaction);
+     *  SqlConnection salesDBConn = (SqlConnection)rawConnection;
+     *
+     * Example of using a File connection manager to acquire a file path:
+     *  object rawConnection = Connections.Prices_zip.AcquireConnection(transaction);
+     *  string filePath = (string)rawConnection;
+     *
+     * Example of releasing a connection manager:
+     *  Connections.SalesDB.ReleaseConnection(rawConnection);
+     */
+    #endregion
+
+    #region Help:  Firing Integration Services Events
+    /* This script component can fire events.
+     *
+     * Example of firing an error event:
+     *  ComponentMetaData.FireError(10, "Process Values", "Bad value", "", 0, out cancel);
+     *
+     * Example of firing an information event:
+     *  ComponentMetaData.FireInformation(10, "Process Values", "Processing has started", "", 0, fireAgain);
+     *
+     * Example of firing a warning event:
+     *  ComponentMetaData.FireWarning(10, "Process Values", "No rows were received", "", 0);
+     */
+    #endregion
+
+    /// <summary>
+    /// This method is called once, before rows begin to be processed in the data flow.
+    ///
+    /// You can remove this method if you don't need to do anything here.
+    /// </summary>
+    public override void PreExecute()
+    {
+        base.PreExecute();
+        /*
+         * Add your code here
+         */
+    }
+
+    /// <summary>
+    /// This method is called after all the rows have passed through this component.
+    ///
+    /// You can delete this method if you don't need to do anything here.
+    /// </summary>
+    public override void PostExecute()
+    {
+        base.PostExecute();
+        /*
+         * Add your code here
+         */
+    }
+
+    int count;
+    /// <summary>
+    /// This method is called once for every row that passes through the component from Input0.
+    ///
+    /// Example of reading a value from a column in the the row:
+    ///  string zipCode = Row.ZipCode
+    ///
+    /// Example of writing a value to a column in the row:
+    ///  Row.ZipCode = zipCode
+    /// </summary>
+    /// <param name="Row">The row that is currently passing through the component</param>
+    public override void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+        /*
+         * Add your code here
+         */
+        count++;
+        Row.rowid = count;
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[BufferWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services buffer wrappers
+*  This module defines classes for accessing data flow buffers
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+
+public class Input0Buffer: ScriptBuffer
+
+{
+    public Input0Buffer(PipelineBuffer Buffer, int[] BufferColumnIndexes, OutputNameMap OutputMap)
+        : base(Buffer, BufferColumnIndexes, OutputMap)
+    {
+    }
+
+    public Int32 rowid
+    {
+        set
+        {
+            this[0] = value;
+        }
+    }
+    public bool rowid_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(0);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    new public bool NextRow()
+    {
+        return base.NextRow();
+    }
+
+    new public bool EndOfRowset()
+    {
+        return base.EndOfRowset();
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_cbbbd72f8de24dcca5797c7b01cf2829.Properties.Settings.get_Default():SC_cbbbd72f8de24dcca5797c7b01cf2829.Properties.Sett" +
+    "ings")]
+
+namespace SC_cbbbd72f8de24dcca5797c7b01cf2829.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_cbbbd72f8de24dcca5797c7b01cf2829.csproj]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{c3da0283-46ce-4fc4-8dd7-9534c304d265}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SC_cbbbd72f8de24dcca5797c7b01cf2829</RootNamespace>
+    <AssemblyName>SC_cbbbd72f8de24dcca5797c7b01cf2829</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.TxScript, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Compile Include="main.cs" />
+    <Compile Include="BufferWrapper.cs" />
+    <Compile Include="ComponentWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- This section defines VSTA properties that describe the host-changable project properties. -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="ScriptComponent" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" />
+        <Host Name="ScriptComponent" GeneratedNamespace="SC_cbbbd72f8de24dcca5797c7b01cf2829" IconIndex="0"></Host>
+        <ProjectClient>
+          <HostIdentifier>SSIS_SC160</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Project]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF16LE]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:CodeName>SC_cbbbd72f8de24dcca5797c7b01cf2829</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
+    <msb:DisplayName>SC_cbbbd72f8de24dcca5797c7b01cf2829</msb:DisplayName>
+    <msb:ProjectId>{E0EA675E-66B5-4AA8-9540-ADD0CB8EA64D}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="SC_cbbbd72f8de24dcca5797c7b01cf2829.csproj" />
+    <msb:File Include="ComponentWrapper.cs" />
+    <msb:File Include="main.cs" />
+    <msb:File Include="BufferWrapper.cs" />
+    <msb:File Include="Properties\Settings.settings" />
+    <msb:File Include="Properties\AssemblyInfo.cs" />
+    <msb:File Include="Properties\Resources.resx" />
+    <msb:File Include="Properties\Resources.Designer.cs" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
+  </msb:ItemGroup>
+</c:Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\AssemblyInfo.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("SC_cbbbd72f8de24dcca5797c7b01cf2829")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("SC_cbbbd72f8de24dcca5797c7b01cf2829")]
+[assembly: AssemblyCopyright("Copyright @  2024")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.0.0")]
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.settings]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_cbbbd72f8de24dcca5797c7b01cf2829.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_cbbbd72f8de24dcca5797c7b01cf2829.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_cbbbd72f8de24dcca5797c7b01cf2829.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace SC_cbbbd72f8de24dcca5797c7b01cf2829.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SC_cbbbd72f8de24dcca5797c7b01cf2829.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Stores the binary representation of the component"
+                  isArray="true"
+                  name="BinaryCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="2">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_cbbbd72f8de24dcca5797c7b01cf2829.dll]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAOAODWcAAAAAAAAAAOAAIiALATAAABIAAAAIAAAAAAAADjEA
+AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAALwwAABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
+AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAFBEAAAAgAAAAEgAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAQAAAAAYAAAAUAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAGgAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAADw
+MAAAAAAAAEgAAAACAAUAnCEAAGgOAAABAAAAAAAAAAQwAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKBAAAAoqHgIoEQAACipuAgJ7AQAABBdYfQEAAAQDAnsB
+AAAEbwYAAAYqHgIoCgAABioqAgMEBSgSAAAKKjoCFgOMGgAAASgTAAAKKloDLAgCFigUAAAKKnIB
+AABwcxUAAAp6HgIoFgAACioeAigXAAAKKn4CKBgAAAoCAnMOAAAGfQIAAAQCAnMPAAAGfQMAAAQq
+kgRyngAAcBpvGQAACiwVAgUCAygaAAAKDgRzBQAABm8MAAAGKkorBwIDbw0AAAYDbwgAAAYt8SoG
+KjoCKBsAAAoCA30EAAAEKjoCKBsAAAoCA30FAAAEKh4CKBsAAAoqrn4GAAAELR5yrgAAcNAHAAAC
+KBwAAApvHQAACnMeAAAKgAYAAAR+BgAABCoafgcAAAQqHgKABwAABCoafggAAAQqHgIoHwAACiou
+cxUAAAaACAAABCoAQlNKQgEAAQAAAAAADAAAAHY0LjAuMzAzMTkAAAAABQBsAAAAJAUAACN+AACQ
+BQAAGAYAACNTdHJpbmdzAAAAAKgLAAAgAQAAI1VTAMgMAAAQAAAAI0dVSUQAAADYDAAAkAEAACNC
+bG9iAAAAAAAAAAIAAAFXFaABCQEAAAD6ATMAFgAAAQAAACAAAAAIAAAACAAAABYAAAAPAAAAHwAA
+ABAAAAADAAAABQAAAAYAAAABAAAABAAAAAEAAAAAAPoCAQAAAAAABgD0AUoEBgCIAkoEBgBAATcE
+DwC+BAAABgBtAYwDBgDXAYwDBgC4AYwDBgBvAowDBgAUAowDBgAtAowDBgCEAYwDBgCfAcMCCgBI
+Ao0ACgAJBI0ADgD6A40ACgDVA40ACgCEBY0ABgBHBUQDBgAjATcEBgAaBGoEBgDJA3cDEgDzAOQC
+EgBUAeQCEgDbAGIDBgAIAUoEBgABAEQDBgCeA0QDBgDdAkQDBgC4A0QDBgCuAEQDBgBfAEQDBgAP
+BowDAAAAACsAAAAAAAEAAQABABAAVwMAABAAAQABAAEAEADtAwAAOQACAAUAAQAQAGYFAABFAAIA
+CgABABAAOwUAAEkABAAOAAEAEAD8BAAASQAFAA8AAAAQAHEEzQRJAAYAEAAAARAAKwXNBGEACAAU
+AAEAlAVjAAYAOwVmAAYA/ARqAAEAdAVuAAEAdAVuABEASwNyABEAywB2ABEATwB6AFAgAAAAAMYA
+pgIGAAEAWCAAAAAAxgCxAgYAAQBgIAAAAADGAOwFfgABAHwgAAAAAIYYKgQGAAIAhCAAAAAAhhgq
+BBsAAgCPIAAAAACGCEUAAQAFAJ4gAAAAAIYIIgOEAAYAtSAAAAAAhgADBisABwC9IAAAAACGAE4F
+KwAHAMUgAAAAAIYYKgQGAAcA5SAAAAAAxgDfBYkABwAKIQAAAADGAdgFfgALAB0hAAAAAMYB7AV+
+AAwAHyEAAAAAhhgqBJMADQAuIQAAAACGGCoEkwAOAD0hAAAAAIMYKgQGAA8ARSEAAAAAkwgWBJkA
+DwBxIQAAAACTCLMAngAPAHghAAAAAJMIvwCjAA8AgCEAAAAAlghaBakAEACHIQAAAACGGCoEBgAQ
+AI8hAAAAAJEYMASuABAAAAABAAcGAAABAA8EAAACAAYFAAADAOMDAAABAL0CAAABAL0CAAABADQA
+AAACAIMAAAADAA8EAAAEAOMDAAABAA8EAAABAAcGAAABAIoFAAABAIoFAAABAL0CCQAqBAEAEQAq
+BAYAGQAqBAoAKQAqBBAAMQAqBBAAOQAqBBAAQQAqBBAASQAqBBAAUQAqBBAAWQAqBBAAYQAqBBAA
+aQAqBAYAmQAqBAYAuQAqBBUAyQAqBAYAiQCmAgYAiQCxAgYAcQAqBBsAcQA7AyUAcQAzAwEA2QAq
+BBAAcQADBisAcQBOBSsAiQAqBAYA4QA0BS8AiQAaBTYAkQAqBAYA8QBxADwA8QALBkMAoQAqBEkA
+wQAqBAYALgALAMkALgATANIALgAbAPEALgAjAPoALgArACMBLgAzACMBLgA7ACMBLgBDAPoALgBL
+ACkBLgBTACMBLgBbAEABQwBjAIoBaQBzAPEAiQBzAPEA4wBrAIoBAQF7AIoBAwABAAcAAwAIAAUA
+AABJALIAAAAmA7YAAAAaBLoAAADTAL8AAABeBcQAAQAGAAMAAQAHAAUAAgARAAcAAgASAAkAAQAT
+AAkAAgAUAAsABIAAAAEAAAAAAAAAAAAAAAAABwAAAAQAAAAAAAAAAAAAAFEAPAAAAAAAEAAAAAAA
+AAAAAAAAWgCaBQAAAAAQAAAAAAAAAAAAAABaALcFAAAAAAQAAAAAAAAAAAAAAFEARAMAAAAAAAAA
+AAEAAAB7BAAAAAAASW50MzIAU0NfY2JiYmQ3MmY4ZGUyNGRjY2E1Nzk3YzdiMDFjZjI4MjkAPE1v
+ZHVsZT4ASW5wdXRJRABtc2NvcmxpYgBzZXRfcm93aWQAZGVmYXVsdEluc3RhbmNlAFJ1bnRpbWVU
+eXBlSGFuZGxlAEdldFR5cGVGcm9tSGFuZGxlAElucHV0TmFtZQBNaWNyb3NvZnQuU3FsU2VydmVy
+LkR0cy5QaXBlbGluZQBUeXBlAGdldF9DdWx0dXJlAHNldF9DdWx0dXJlAHJlc291cmNlQ3VsdHVy
+ZQBBcHBsaWNhdGlvblNldHRpbmdzQmFzZQBFZGl0b3JCcm93c2FibGVTdGF0ZQBDb21waWxlckdl
+bmVyYXRlZEF0dHJpYnV0ZQBEZWJ1Z2dlck5vblVzZXJDb2RlQXR0cmlidXRlAERlYnVnZ2FibGVB
+dHRyaWJ1dGUARWRpdG9yQnJvd3NhYmxlQXR0cmlidXRlAEFzc2VtYmx5VGl0bGVBdHRyaWJ1dGUA
+QXNzZW1ibHlUcmFkZW1hcmtBdHRyaWJ1dGUAVGFyZ2V0RnJhbWV3b3JrQXR0cmlidXRlAEFzc2Vt
+Ymx5Q29uZmlndXJhdGlvbkF0dHJpYnV0ZQBBc3NlbWJseURlc2NyaXB0aW9uQXR0cmlidXRlAENv
+bXBpbGF0aW9uUmVsYXhhdGlvbnNBdHRyaWJ1dGUAQXNzZW1ibHlQcm9kdWN0QXR0cmlidXRlAEFz
+c2VtYmx5Q29weXJpZ2h0QXR0cmlidXRlAFNTSVNTY3JpcHRDb21wb25lbnRFbnRyeVBvaW50QXR0
+cmlidXRlAEFzc2VtYmx5Q29tcGFueUF0dHJpYnV0ZQBSdW50aW1lQ29tcGF0aWJpbGl0eUF0dHJp
+YnV0ZQBQcmVFeGVjdXRlAFBvc3RFeGVjdXRlAHZhbHVlAFN5c3RlbS5SdW50aW1lLlZlcnNpb25p
+bmcAU3RyaW5nAFN5c3RlbS5Db21wb25lbnRNb2RlbABTQ19jYmJiZDcyZjhkZTI0ZGNjYTU3OTdj
+N2IwMWNmMjgyOS5kbGwAc2V0X3Jvd2lkX0lzTnVsbABTZXROdWxsAHNldF9JdGVtAFN5c3RlbQBy
+ZXNvdXJjZU1hbgBTY3JpcHRNYWluAFN5c3RlbS5Db25maWd1cmF0aW9uAFN5c3RlbS5HbG9iYWxp
+emF0aW9uAFN5c3RlbS5SZWZsZWN0aW9uAEludmFsaWRPcGVyYXRpb25FeGNlcHRpb24AU3RyaW5n
+Q29tcGFyaXNvbgBDdWx0dXJlSW5mbwBPdXRwdXROYW1lTWFwAE91dHB1dE1hcABJbnB1dDBCdWZm
+ZXIAUGlwZWxpbmVCdWZmZXIAU2NyaXB0QnVmZmVyAGdldF9SZXNvdXJjZU1hbmFnZXIALmN0b3IA
+LmNjdG9yAFN5c3RlbS5EaWFnbm9zdGljcwBTeXN0ZW0uUnVudGltZS5Db21waWxlclNlcnZpY2Vz
+AFN5c3RlbS5SZXNvdXJjZXMAU0NfY2JiYmQ3MmY4ZGUyNGRjY2E1Nzk3YzdiMDFjZjI4MjkuUHJv
+cGVydGllcy5SZXNvdXJjZXMucmVzb3VyY2VzAERlYnVnZ2luZ01vZGVzAFNDX2NiYmJkNzJmOGRl
+MjRkY2NhNTc5N2M3YjAxY2YyODI5LlByb3BlcnRpZXMAVmFyaWFibGVzAEJ1ZmZlckNvbHVtbklu
+ZGV4ZXMAR2V0Q29sdW1uSW5kZXhlcwBTZXR0aW5ncwBFcXVhbHMAQ29ubmVjdGlvbnMAT2JqZWN0
+AEVuZE9mUm93c2V0AGdldF9EZWZhdWx0AFVzZXJDb21wb25lbnQAUGFyZW50Q29tcG9uZW50AFNj
+cmlwdENvbXBvbmVudABjb3VudABNaWNyb3NvZnQuU3FsU2VydmVyLlR4U2NyaXB0AE1pY3Jvc29m
+dC5TcWxTZXJ2ZXIuUGlwZWxpbmVIb3N0AElucHV0MF9Qcm9jZXNzSW5wdXQASW5wdXQwX1Byb2Nl
+c3NJbnB1dFJvdwBOZXh0Um93AGdldF9Bc3NlbWJseQAAgJtJAHMATgB1AGwAbAAgAHAAcgBvAHAA
+ZQByAHQAeQAgAGMAYQBuAG4AbwB0ACAAYgBlACAAcwBlAHQAIAB0AG8AIABGAGEAbABzAGUALgAg
+AEEAcwBzAGkAZwBuACAAYQAgAHYAYQBsAHUAZQAgAHQAbwAgAHQAaABlACAAYwBvAGwAdQBtAG4A
+IABpAG4AcwB0AGUAYQBkAC4AAA9JAG4AcAB1AHQAIAAwAABxUwBDAF8AYwBiAGIAYgBkADcAMgBm
+ADgAZABlADIANABkAGMAYwBhADUANwA5ADcAYwA3AGIAMAAxAGMAZgAyADgAMgA5AC4AUAByAG8A
+cABlAHIAdABpAGUAcwAuAFIAZQBzAG8AdQByAGMAZQBzAADjeEhqvgQpR4xPXnkE5OBiAAQgAQEI
+AyAAAQUgAQEREQQgAQEOBSABARFZCSADARI9HQgSQQUgAgEIHAMgAAIGIAICDhF1BSABHQgIBgAB
+EnkRfQUgABKAgQcgAgEOEoCBCLd6XFYZNOCJCImEXc2AgMyRAgYIAwYSFAMGEhgDBhJFAwYSUQMG
+ElUDBhIgBSABARIMBCABAQIJIAQBCA4SPRJBBSABARJFBAAAElEEAAASVQUAAQESVQQAABIgAwAA
+AQMoAAgDKAACBAgAElEECAASVQQIABIgCAEACAAAAAAAHgEAAQBUAhZXcmFwTm9uRXhjZXB0aW9u
+VGhyb3dzAQgBAAIAAAAAACgBACNTQ19jYmJiZDcyZjhkZTI0ZGNjYTU3OTdjN2IwMWNmMjgyOQAA
+BQEAAAAAFgEAEUNvcHlyaWdodCBAICAyMDI0AABJAQAaLk5FVEZyYW1ld29yayxWZXJzaW9uPXY0
+LjcBAFQOFEZyYW1ld29ya0Rpc3BsYXlOYW1lEi5ORVQgRnJhbWV3b3JrIDQuNwQBAAAAALQAAADO
+yu++AQAAAJEAAABsU3lzdGVtLlJlc291cmNlcy5SZXNvdXJjZVJlYWRlciwgbXNjb3JsaWIsIFZl
+cnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5
+MzRlMDg5I1N5c3RlbS5SZXNvdXJjZXMuUnVudGltZVJlc291cmNlU2V0AgAAAAAAAAAAAAAAUEFE
+UEFEULQAAADkMAAAAAAAAAAAAAD+MAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8DAAAAAAAAAA
+AAAAAABfQ29yRGxsTWFpbgBtc2NvcmVlLmRsbAAAAAAA/yUAIAAQAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAEAEAAAABgAAIAAAAAAAAAAAAAAAAAAAAEAAQAAADAAAIAAAAAAAAAAAAAAAAAAAAEAAAAA
+AEgAAABYQAAA7AMAAAAAAAAAAAAA7AM0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8A
+AAAAAL0E7/4AAAEAAAABAAAAAAAAAAEAAAAAAD8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABE
+AAAAAQBWAGEAcgBGAGkAbABlAEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8A
+bgAAAAAAAACwBEwDAAABAFMAdAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAACgDAAABADAAMAAw
+ADAAMAA0AGIAMAAAABoAAQABAEMAbwBtAG0AZQBuAHQAcwAAAAAAAAAiAAEAAQBDAG8AbQBwAGEA
+bgB5AE4AYQBtAGUAAAAAAAAAAABwACQAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAA
+AAAAUwBDAF8AYwBiAGIAYgBkADcAMgBmADgAZABlADIANABkAGMAYwBhADUANwA5ADcAYwA3AGIA
+MAAxAGMAZgAyADgAMgA5AAAAMAAIAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAu
+ADAALgAwAAAAcAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABTAEMAXwBjAGIAYgBiAGQA
+NwAyAGYAOABkAGUAMgA0AGQAYwBjAGEANQA3ADkANwBjADcAYgAwADEAYwBmADIAOAAyADkALgBk
+AGwAbAAAAEgAEgABAEwAZQBnAGEAbABDAG8AcAB5AHIAaQBnAGgAdAAAAEMAbwBwAHkAcgBpAGcA
+aAB0ACAAQAAgACAAMgAwADIANAAAACoAAQABAEwAZQBnAGEAbABUAHIAYQBkAGUAbQBhAHIAawBz
+AAAAAAAAAAAAeAAoAAEATwByAGkAZwBpAG4AYQBsAEYAaQBsAGUAbgBhAG0AZQAAAFMAQwBfAGMA
+YgBiAGIAZAA3ADIAZgA4AGQAZQAyADQAZABjAGMAYQA1ADcAOQA3AGMANwBiADAAMQBjAGYAMgA4
+ADIAOQAuAGQAbABsAAAAaAAkAAEAUAByAG8AZAB1AGMAdABOAGEAbQBlAAAAAABTAEMAXwBjAGIA
+YgBiAGQANwAyAGYAOABkAGUAMgA0AGQAYwBjAGEANQA3ADkANwBjADcAYgAwADEAYwBmADIAOAAy
+ADkAAAA0AAgAAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADAALgAwAAAA
+OAAIAAEAQQBzAHMAZQBtAGIAbAB5ACAAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4AMAAuADAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAADAAAABAxAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the Microsoft Visual Studio Tools for Applications project. Project names must be unique within a package."
+                  name="VSTAProjectName"
+                  typeConverter="NOTBROWSABLE">SC_cbbbd72f8de24dcca5797c7b01cf2829</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the programming language used by the script."
+                  name="ScriptLanguage"
+                  typeConverter="Microsoft.SqlServer.VSTAHosting.ScriptingLanguages">CSharp</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read-only variables."
+                  name="ReadOnlyVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read/write variables."
+                  name="ReadWriteVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIWriteableVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="List of breakpoints present on the script."
+                  isArray="true"
+                  name="BreakpointCollection"
+                  typeConverter="NOTBROWSABLE">
+                  <arrayElements
+                    arrayElementCount="0" />
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Checksum to match component metedata against compiled codes."
+                  name="MetadataChecksum140"
+                  typeConverter="NOTBROWSABLE">3C</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ScriptComponentHost</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Dump data to DW\Script Component.Inputs[Input 0]"
+                  hasSideEffects="true"
+                  name="Input 0">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Dump data to DW\Script Component.Outputs[Output 0]"
+                  name="Output 0"
+                  synchronousInputId="Package\Dump data to DW\Script Component.Inputs[Input 0]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Dump data to DW\Script Component.Outputs[Output 0].Columns[row_id]"
+                      dataType="i4"
+                      lineageId="Package\Dump data to DW\Script Component.Outputs[Output 0].Columns[row_id]"
+                      name="row_id" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Dump data to DW.Paths[Excel Source Output]"
+              endId="Package\Dump data to DW\Script Component.Inputs[Input 0]"
+              name="Excel Source Output"
+              startId="Package\Dump data to DW\Excel Source.Outputs[Excel Source Output]" />
+            <path
+              refId="Package\Dump data to DW.Paths[Output 0]"
+              endId="Package\Dump data to DW\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Output 0"
+              startId="Package\Dump data to DW\Script Component.Outputs[Output 0]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="163.2,41.6"
+          Id="Package\Dump data to DW"
+          TopLeft="108.333330252578,57.760783847001" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Dump data to DW">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Dump data to DW\OLE DB Destination"
+          TopLeft="105.634896008753,210.458386373242" />
+        <NodeLayout
+          Size="140,41.6"
+          Id="Package\Dump data to DW\Excel Source"
+          TopLeft="81.7063311992875,31.7446622517807" />
+        <NodeLayout
+          Size="161.6,41.6"
+          Id="Package\Dump data to DW\Script Component"
+          TopLeft="80.4920608036478,113.936816585071" />
+        <EdgeLayout
+          Id="Package\Dump data to DW.Paths[Output 0]"
+          TopLeft="161.292060803648,155.536816585071">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="29.942835205105,54.9215697881708"
+              Start="0,0"
+              End="29.942835205105,47.4215697881708">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.4607848940854" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.4607848940854"
+                    Point2="0,27.4607848940854"
+                    Point3="4,27.4607848940854" />
+                  <mssgle:LineSegment
+                    End="25.942835205105,27.4607848940854" />
+                  <mssgle:CubicBezierSegment
+                    Point1="25.942835205105,27.4607848940854"
+                    Point2="29.942835205105,27.4607848940854"
+                    Point3="29.942835205105,31.4607848940854" />
+                  <mssgle:LineSegment
+                    End="29.942835205105,47.4215697881708" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Dump data to DW.Paths[Excel Source Output]"
+          TopLeft="151.706331199287,73.3446622517807">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="9.58572960436032,40.5921543332906"
+              Start="0,0"
+              End="9.58572960436032,33.0921543332906">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.2960771666453" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.2960771666453"
+                    Point2="0,20.2960771666453"
+                    Point3="4,20.2960771666453" />
+                  <mssgle:LineSegment
+                    End="5.58572960436032,20.2960771666453" />
+                  <mssgle:CubicBezierSegment
+                    Point1="5.58572960436032,20.2960771666453"
+                    Point2="9.58572960436032,20.2960771666453"
+                    Point3="9.58572960436032,24.2960771666453" />
+                  <mssgle:LineSegment
+                    End="9.58572960436032,33.0921543332906" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Dump data to DW\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Dump data to DW\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

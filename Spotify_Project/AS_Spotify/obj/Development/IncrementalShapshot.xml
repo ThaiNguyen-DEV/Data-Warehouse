@@ -1,0 +1,96 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>AS_Spotify</Database>
+    <Server>LAPTOP-DV2TFOR5\SQLSERVER</Server>
+    <ConnectionString>Data Source=LAPTOP-DV2TFOR5\SQLSERVER;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>BbUlIAtmrH6Ys8rXAipNLR9mn3Y=2024-10-31 10:34:10 PM2024-10-31 10:26:27 PM</TimeStamp>
+        <ID>
+          <String>Spotify DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>qmjiaYGOhRECHEdFh7YPhL5IqHc=2024-10-31 10:27:13 PM2024-10-31 10:27:12 PM</TimeStamp>
+        <ID>
+          <String>Spotify DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>l8x2NGdCJFrTV8mQgnjeyX8CNMg=2024-10-31 10:31:06 PM2024-10-31 10:29:13 PM</TimeStamp>
+        <ID>
+          <String>Dim Artist</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>A1WuHJw4b39PzIYR3riMNbpddEw=2024-10-31 10:31:06 PM2024-10-31 10:29:13 PM</TimeStamp>
+        <ID>
+          <String>Dim Time</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>06yLaoqfZaxg7QMJG5fE47c4F7M=2024-10-31 10:31:06 PM2024-10-31 10:29:13 PM</TimeStamp>
+        <ID>
+          <String>Dim Album</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>BTS+v2Nj/PlQ5Q7JqMs01X/c4BY=2024-10-31 10:31:06 PM2024-10-31 10:29:13 PM</TimeStamp>
+        <ID>
+          <String>Dim Genre</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>2PklV/cuHijZBQHxvZjh+CIknSc=2024-10-31 10:31:06 PM2024-10-31 10:29:13 PM</TimeStamp>
+        <ID>
+          <String>Dim Location</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>uJ7ssa74jjbXlT6T0KlCNXGicMs=2024-10-31 10:31:06 PM2024-10-31 10:29:13 PM</TimeStamp>
+        <ID>
+          <String>Dim Song</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>PDeECgaeRh6NjwBo01klGCcKkig=2024-10-31 10:31:06 PM2024-10-31 10:29:13 PMsf3+cbdWXDOIPvzkeLXtO79CR8Y=2024-10-31 10:29:14 PM2024-10-31 10:29:13 PM</TimeStamp>
+        <ID>
+          <String>Spotify DW</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>/xoXnK1huEqVhp8fKtZ66fT2eUk=2024-10-30 12:12:05 AM2024-10-30 12:12:04 AM</TimeStamp>
+      <ID>
+        <String>AS_Spotify</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2024-10-31T15:34:32.043333Z</LastDeployed>
+</DeploymentSnapshot>
