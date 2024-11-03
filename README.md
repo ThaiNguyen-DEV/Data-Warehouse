@@ -2,12 +2,10 @@
 ![Logo](https://upload.wikimedia.org/wikipedia/vi/5/5a/Logo_tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_C%C3%B4ng_ngh%E1%BB%87_th%C3%B4ng_tin_v%C3%A0_Truy%E1%BB%81n_th%C3%B4ng_Vi%E1%BB%87t_-_H%C3%A0n%2C_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_%C4%90%C3%A0_N%E1%BA%B5ng.svg)
 # Topic: Analysis of Song, Artist and Genre Popularity on Spotify
 ## Members
-- Nguyễn Thanh Việt - 22IT339
-- Nguyễn Đinh Duy Thái - 22IT.B186
-- Nguyễn Quang Phong - 22IT.B157
-- Trần Nhật Lam - 22IT.B115
-
-
+- [Nguyễn Thanh Việt](https://github.com/Batmantk12345) - 22IT339
+- [Nguyễn Đinh Duy Thái](https://github.com/ThaiNguyen-DEV) - 22IT.B186
+- [Nguyễn Quang Phong](https://github.com/zacknguyn) - 22IT.B157
+- [Trần Nhật Lam](https://github.com/nhatlam214) - 22IT.B115
 
 ## Introduction
 - Reflects Global Music Trends: With a large user base, Spotify represents music preferences worldwide.
