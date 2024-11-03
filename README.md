@@ -22,21 +22,21 @@
 
 ## Main content
 - Logical Modeling Design: Dim_Song, Dim_Genre, Dim_Album, Dim_Artist, Dim_Time, Dim_Location, Fact_Song_Popularity, Fact_Artist_Popularity, Fact_Genre_Popularity
-- Star Schema:
+- Star Schema
 ![Logo](https://i.postimg.cc/hfV8MTFV/star.png)
-- Physical Model:
+- Physical Model
 ![Logo](https://i.postimg.cc/2LZQsB1R/physical.png)
-### SSIS Process:
+### SSIS Process
 - Create SSIS project on Visual Studio
 - Create control flow for dumping data to DataWarehouse
 - Dump data from source to DataWarehouse
 - Create Dimension Tables
 - Create Fact Tables
-### SSAS Process:
+### SSAS Process
 - Add Data Source
 - Create Data Cube
 - Add Dimension Attributes
-### SSRS Process:
+### SSRS Process
 - Dashboard of Song Popularity
 ![Logo](https://i.postimg.cc/0rTdpZ48/rp1.png)
 - Dashboard of Artist Popularity
