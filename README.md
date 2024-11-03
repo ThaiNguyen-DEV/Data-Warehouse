@@ -45,7 +45,7 @@
 ![Logo](https://i.postimg.cc/ZWZ8QnZ2/rp2.png)
 - Dashboard of Genre Popularity
 ![Logo](https://i.postimg.cc/xk1K0ZXP/rp3.png)
-## Tools:
+## Tools
 - SQL Server Management Studio 20: [Link Download](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16&fbclid=IwZXh0bgNhZW0CMTEAAR0fdj20xbt3zZGfzP6EJNK2RDNbv-VBDD9M8CbNOnhWhETegcfr4EhPd4U_aem_AJI96LOQPds2Qn1vZsrU-A)
 - SQL Server Integration Services Projects 2022: [Link Download](https://marketplace.visualstudio.com/items?itemName=SSIS.MicrosoftDataToolsIntegrationServices&fbclid=IwZXh0bgNhZW0CMTEAAR1nM6BlnmNMkWUkhc6LFq6TY8fBqGw0lp9TOxpa2rKEKmGnC-p7h0mrVy4_aem_BNa6Ko6GhvXOWeg5TQcgjw)
 - Visual Studio 2022: [Link Download](https://visualstudio.microsoft.com/vs/?fbclid=IwZXh0bgNhZW0CMTEAAR3aymLrNvc65GeB8K2ICLovjuhWzV82o2aidDfESnPZc0S8VJU2VVaK2KE_aem_wRFo7zPNbm2tN2volQj6fQ)
